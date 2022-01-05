@@ -69,7 +69,7 @@ namespace Final_Project
             SqlCommand cmd2 = new SqlCommand(query2, conn);
             DataTable dt2 = new DataTable();
             SqlDataAdapter load_detail = new SqlDataAdapter(cmd2);
-            dgv_loadShipping.AllowUserToAddRows = false;
+            dgv_loadDetail.AllowUserToAddRows = false;
             load_detail.Fill(dt2);
             dgv_loadDetail.DataSource = dt2;
             cbox_quarterDetail.Items.Add("Qúy 1");
